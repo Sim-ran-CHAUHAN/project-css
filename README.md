@@ -1,5 +1,3 @@
 # project-css
-Every Day Css Project 
-changes made.
-dkjffoi
-cla
+Project on Side bar-manu in css and html.
+lessss goooo!!!!!!
