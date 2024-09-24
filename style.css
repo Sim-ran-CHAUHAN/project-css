@@ -18,14 +18,18 @@
     position: fixed;
     height: 100vh;
     width: 280px;
+    left: -280px;
     background: rgba(255, 255, 255, 0.1);
+    border: 1px solid grey;
     box-shadow: 0 0 6px rgba(255, 255, 255), 0.5;
+    transition: left  1s ease-in-out;
 }
 
 .sidebar_menu .logo{
     position: absolute;
     height: 60px;
     width: 100%;
+    border: 1px solid rgb(114, 110, 110);
     box-shadow: 0 0 6px rgba(255, 255, 255), 0.5;
 }
 
@@ -86,3 +90,54 @@
     opacity: 1;
     
  }
+
+ #check{
+   display: none;
+ }
+
+ .main_box .btn_one i{
+   color: #fff;
+   font-size: 30px;
+   font-weight: 700;
+   position: absolute;
+   left: 16px;
+   line-height: 60px;
+   cursor: pointer;
+   opacity: 1;
+   transition: all 0.3s linear;
+ }
+
+.sidebar_menu .btn_two i{
+   
+   font-size: 25px;
+   position: absolute;
+   font-weight: 700;
+   left: 250px;
+   line-height: 60px;
+   cursor: pointer;
+   opacity: 0;
+   transition: all 0.3s linear;
+}
+
+.btn-one i:hover{
+   font-size: 29px;
+}
+
+.btn-two i:hover{
+   font-size: 24px;
+}
+
+#check:checked ~ .sidebar_menu{
+   left: 0px;
+   
+}
+
+#check:checked ~ .btn_one i{
+   opacity: 0;
+   
+}
+
+#check:checked ~ .sidebar_menu .btn_two i{
+   opacity: 1;
+   
+   }
